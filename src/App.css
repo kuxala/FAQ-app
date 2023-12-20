@@ -1,38 +1,134 @@
-.App {
-  text-align: center;
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
+body{
+  background: linear-gradient(180deg, #B068E9 0%, #6463E7 100%);
+  background-repeat: no-repeat;
   min-height: 100vh;
+}
+
+
+.container{
+  width: 327px;
   display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  padding-bottom: 1rem;
+  flex-shrink: 0;
+  border-radius: 23px;
+  background: #FFF;
+  box-shadow: 0px 50px 50px -20px rgba(53, 18, 122, 0.50);
+  margin: 0 auto;
+  margin-top: 140px;
 }
 
-.App-link {
-  color: #61dafb;
+.image{
+  width: 237px;
+  height: 180px;
+  flex-shrink: 0;
+  position: absolute;
+  margin-top: -110px;
+  margin-left: 45px;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+.faq{
+  padding-top: 100px;
+  text-align: center;
+
+}
+.faq-p{
+  color: rgb(37, 38, 46);
+  font-family: Kumbh Sans;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+  padding-left: 1rem;
+  padding-right: 1rem;
+  margin-bottom: 1rem;
+  
+}
+.p-text{
+  display: flex;
+}
+.div-text{
+  width: 250px;
+  color: #1E1F36;
+  font-family: Kumbh Sans;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+}
+.arrow{
+  width: 20px;
+  height: 10px;
+  stroke-width: 2px;
+  margin: 0 auto;
+  margin-top: 10px;
+}
+
+.underline{
+  width: 279px;
+  height: 1px;
+  flex-shrink: 0;
+  background: #c8c8c8;
+  margin-top: 10px;
+}
+
+.droptext{
+  margin-top: 10px;
+}
+.faq{
+  padding-bottom: 2rem;
+  color: #1E1F36;
+  font-family: Kumbh Sans;
+  font-size: 32px;
+  font-style: normal;
+  font-weight: 900;
+  line-height: normal;
+}
+
+@media only screen and (min-width: 768px){
+  .container{
+    max-width: 920px;
+    width: 100%;
+    min-height: 509px;
+    display: flex;
+    margin-top: 150px;
   }
-  to {
-    transform: rotate(360deg);
+
+  .left-col{
+    width: 50%;
+    
   }
+  .right-col{
+    width: 50%;
+  }
+
+  .image{
+    width: 472px;
+    height: 359px;
+    flex-shrink: 0;
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 75px;
+    position: absolute;
+    margin-left: -75px;
+  }
+
+  .div-text{
+    font-size: 18px;
+    min-width: 350px;
+  }
+  p{
+    width: 350px;
+  }
+  .underline{
+    width: 350px;
+  }
+
 }
